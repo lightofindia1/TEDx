@@ -48,6 +48,11 @@
 	.navbar-nav *{
 		color:#fff;
 	}
+	@media screen and (max-width:600px){
+		#gmap_layer, #gmap_canvas{
+			width:100% !important;
+		}
+	}
 	</style>
 
 </head>
@@ -197,7 +202,7 @@
 
 	<p><center>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBOwSUAPQ4hjK4zy6iXdtgFTANC3QIG8H4&callback=initMap'></script>
-<div style='overflow:hidden;height:440px;width:700px;'>
+<div style='overflow:hidden;height:440px;width:700px;' id="gmap_layer">
    <div id='gmap_canvas' style='height:440px;width:700px;'></div>
    <div><small></small></div>
    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
